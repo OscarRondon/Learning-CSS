@@ -1,3 +1,16 @@
-*{
-  font-size: 16px;
+/*
+Sizes: 
+  em = relative to the size defined on the parent container
+  rem = relative to the root size (html)
+*/
+
+body{
+  color: green;
+  background-color: #224;
+  
 }
+
+a {
+  all: unset;
+}
+

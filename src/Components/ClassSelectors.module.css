@@ -1,0 +1,30 @@
+/*
+the styles are procesed in the following order:
+id (#) > class (.) > lable
+*/
+
+.header1{
+    color: brown;
+}
+
+.header2{
+    color: magenta;
+}
+
+.header3{
+    color: mediumaquamarine;
+}
+
+.header4{
+    color: darkgreen;
+}
+
+.text1 {
+    color: darkolivegreen;
+    font-size: 35px;
+}
+
+.text2 {
+    color: chartreuse;
+    font-size: 45px;
+}
