@@ -4,13 +4,10 @@ Sizes:
   rem = relative to the root size (html)
 */
 
-body{
-  color: green;
-  background-color: #224;
-  
-}
-
-a {
-  all: unset;
+  body{
+    color: #008000;
+    background-color: rgba(102, 102, 179, 0.8);
+    margin: 2% 25%;
+    padding: 2%;
 }
 
