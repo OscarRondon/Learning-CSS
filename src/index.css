@@ -22,7 +22,7 @@ CSS Reset
 /*
 3. Allow percentage-based heights in the application
 */
-html, body {
+html, body, #root {
   height: 100%;
 }
 /*
@@ -52,6 +52,10 @@ input, button, textarea, select {
 */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 /*
 9. Create a root stacking context
@@ -65,8 +69,13 @@ p, h1, h2, h3, h4, h5, h6 {
   src: url(./assets/Fonts/Raleway/Raleway-Thin.ttf);
 }
 
-  body{
-    font-family: Raleway-Thin;
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url(./assets/Fonts/Raleway/Raleway-Regular.ttf);
+}
+
+body{
+    font-family: Raleway-Thin, Raleway-Regular;
     color: #008000;
     background-color: rgba(27, 27, 28, 0.9);
     margin: 2% 25%;

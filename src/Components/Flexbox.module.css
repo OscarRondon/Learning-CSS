@@ -1,0 +1,26 @@
+.container{
+    width: 90%;
+    background: #bbb7b7;
+    padding: 5px;
+    display: flex;
+    /*
+    flex-direction: row;
+    flex-wrap: wrap;
+    */
+    flex-flow:row  wrap; /* this propertie replace the 2 above */
+    justify-content: center; /* align obhject horizontally*/
+    align-items: center; /*align items vertically whe we have only one line*/
+    align-content: center; /*align items vertically whe we have multiple objects */
+}
+
+.box{
+    background: #197bbd;
+    border:solid 1px black;
+    font-family: Raleway-Regular;
+    font-size: 32px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 3% 0;
+}

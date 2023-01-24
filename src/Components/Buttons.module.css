@@ -5,7 +5,7 @@
     font-size: 14px;
     text-decoration: none;
     border: 1px solid #000;
-    padding: 10px;
+    padding: 5px 10px;
     margin: 5px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -23,20 +23,20 @@
 
 .small{
     font-size: 10px;
-    padding: 8px;
+    padding: 5px 8px;
 }
 
 .medium{
     font-size: 16px;
-    padding: 12px;    
+    padding: 5px 12px;    
 }
 
 .big{
     font-size: 18px;
-    padding: 14px;    
+    padding: 5px 14px;    
 }
 
 .extraBig{
     font-size: 20px;
-    padding: 16px;
+    padding: 5px 16px;
 }

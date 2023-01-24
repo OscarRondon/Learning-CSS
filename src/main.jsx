@@ -6,6 +6,7 @@ import { LableSelectors } from './Components/LableSelectors'
 import { ClassSelectors } from './Components/ClassSelectors'
 import { Buttons } from './Components/Buttons'
 import { Transform } from './Components/Transform'
+import { Flexbox } from './Components/Flexbox'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -20,6 +21,8 @@ root.render(
     <Buttons/>
     
     <Transform/>
+    
+    <Flexbox/>
     
   </React.StrictMode>,
 )
