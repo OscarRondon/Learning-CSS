@@ -1,0 +1,64 @@
+.container{
+    background: #fff4aa5a;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    /******************
+    transform: translate(100px, 100px);
+    transform: scale(1.5,1.5);
+    transform: rotate(1.5,1.5);
+    transform: skew(200deg,0deg);
+    ******************/
+    
+    transition-delay: 0.2s;
+    animation-iteration-count: infinite;
+    -webkit-transition: background 5s ease;
+    -moz-transition: background 5s ease;
+    -ms-transition: background 5s ease;
+    -o-transition: background 5s ease;
+    transition: background 5s ease;
+}
+
+.container:hover {
+    background: #222;
+}
+
+/*
+    The property Transform can be use with:
+    - Translate
+    - Scalate
+    - Rotate
+    - skew (Angles, and this propety its exclusive, cannot be combine with the otrer transform options)
+
+*/
+
+/*
+    The Transition have diferent sub properties
+    - ease: slow - fast-slow
+    - linear: same speed all the time
+    - ease-out slow end
+    - ease-in-out: begin slow ends slows
+    
+*/
+
+@keyframes colors{
+    /*
+    from{ background: #be0c9e5a;}
+    to{ background: #ba61aa5a;}
+    */
+    0%{ background: #be0c9e5a; }
+    25%{ background: #a72e915a; }
+    50%{ background: #844b7a5a; }
+    100%{ background: #be0c9e5a; }
+    
+}
+
+.container2{
+    background: #be0c9e5a;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
