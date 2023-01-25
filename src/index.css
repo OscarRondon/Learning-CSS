@@ -30,7 +30,7 @@ Typographic tweaks!
 4. Add accessible line-height
 5. Improve text rendering
 */
-body {
+body, #root {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -65,20 +65,45 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /*============================================================================================================================================*/
 @font-face {
-  font-family: "Raleway-Thin";
-  src: url(./assets/Fonts/Raleway/Raleway-Thin.ttf);
+  font-family: "OpenSans-Light";
+  src: url(./assets/Fonts/Open_Sans/static/OpenSans/OpenSans-Light.ttf);
 }
 
 @font-face {
-  font-family: "Raleway-Regular";
-  src: url(./assets/Fonts/Raleway/Raleway-Regular.ttf);
+  font-family: "OpenSans-Regular";
+  src: url(./assets/Fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
 }
 
 body{
-    font-family: Raleway-Thin, Raleway-Regular;
-    color: #008000;
-    background-color: rgba(27, 27, 28, 0.9);
-    margin: 2% 25%;
+    font-family: OpenSans-Light, OpenSans-Regular;
+    background-color: rgb(84, 80, 80, 0.7);
+    /*
+    background-color: grey;
+    background-image: url(./assets/Images/LandScape.jpg);
+    background-blend-mode: screen;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+}
+
+#root{
+    margin: 2% 5%;
     padding: 2%;
 }
 
+.bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg img{
+  position: absolute;
+  filter: grayscale(100%) saturate(80);
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

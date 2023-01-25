@@ -1,7 +1,7 @@
 /*
 the styles are procesed in the following order:
 id (#) > class (.) > lable
-*/
+
 
 .header1{
     color: brown;
@@ -28,3 +28,5 @@ id (#) > class (.) > lable
     color: chartreuse;
     font-size: 45px;
 }
+
+*/

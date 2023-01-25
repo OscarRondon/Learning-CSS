@@ -7,11 +7,14 @@ import { ClassSelectors } from './Components/ClassSelectors'
 import { Buttons } from './Components/Buttons'
 import { Transform } from './Components/Transform'
 import { Flexbox } from './Components/Flexbox'
+import { FlexBoxPractice } from './Views/FlexBoxPractice'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     
+    {
+    /*
     <ColorProperty/>
     
     <LableSelectors/>
@@ -23,6 +26,8 @@ root.render(
     <Transform/>
     
     <Flexbox/>
-    
+    */
+    }
+    <FlexBoxPractice/>
   </React.StrictMode>,
 )
