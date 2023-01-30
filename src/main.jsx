@@ -8,26 +8,29 @@ import { Buttons } from './Components/Buttons'
 import { Transform } from './Components/Transform'
 import { Flexbox } from './Components/Flexbox'
 import { FlexBoxPractice } from './Views/FlexBoxPractice'
+import { CSSGrid } from './Components/CSSGrid'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    
+
     {
     /*
     <ColorProperty/>
-    
+
     <LableSelectors/>
-    
+
     <ClassSelectors/>
-    
+
     <Buttons/>
-    
+
     <Transform/>
-    
+
     <Flexbox/>
+
+    <FlexBoxPractice />
     */
     }
-    <FlexBoxPractice/>
-  </React.StrictMode>,
+    <CSSGrid />
+  </React.StrictMode>
 )
