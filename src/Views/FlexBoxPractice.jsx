@@ -17,6 +17,7 @@ export const FlexBoxPractice = () =>{
                     </nav>
                 </header>
             </div>
+            <div id='container' className={styles.container}>
             <section className={styles.main}>
                 <article>
                     <div className={styles.thumb}>
@@ -62,6 +63,7 @@ export const FlexBoxPractice = () =>{
                     </p>
                 </div>
             </aside>
+            </div>
             <footer>
                 <div className={styles.auto}>
                     <p>Creado por Oscar Rondon - Tree of Life Software</p>
