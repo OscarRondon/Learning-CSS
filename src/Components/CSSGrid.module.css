@@ -1,11 +1,10 @@
-
-.header p{
+.header p {
     font-size: 50px;
     text-align: center;
     padding: 20px 0;
 }
 
-.container{
+.container {
     width: 90%;
     margin: auto;
     border: solid green;
@@ -14,13 +13,218 @@
 }
 
 
-.container > div{
+.container>div {
     font-family: OpenSans-Regula;
     padding: 20px;
     color: rgb(243, 234, 234);
     background-color: rgb(8, 133, 133);
     border: solid red 1px;
     margin: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 200px 300px 1fr;
+    grid-template-rows: minmax(150px, auto) minmax(75px, auto);
+    grid-gap: 20px;
+    width: 90%;
+    margin: auto;
+    border: solid green;
+    padding: 5px;
+    font-size: 25px;
+
+}
+
+.container1>div {
+    font-weight: 900;
+    padding: 20px;
+    color: rgb(243, 234, 234);
+    background-color: rgb(8, 133, 133);
+    border: solid red 1px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(150px, auto) minmax(75px, auto);
+    grid-gap: 20px;
+    width: 90%;
+    margin: auto;
+    border: solid green;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.container2>div {
+    font-weight: 900;
+    padding: 20px;
+    color: rgb(243, 234, 234);
+    background-color: rgb(8, 133, 133);
+    border: solid red 1px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container3 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 90%;
+    border: solid green;
+    font-size: 25px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container3>div {
+    font-weight: 900;
+    padding: 20px;
+    color: rgb(243, 234, 234);
+    background-color: rgb(8, 133, 133);
+    border: solid red 1px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container3 .item {
+    background-color: orange;
+    /*
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    */
+
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    /*
+    grid-area: 1/1/-1/2;
+    */
+
+    /*
+    grid-column: 1/span 3;
+    grid-row: 1/ span 2;
+    */
+}
+
+.container4 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "header header header header"
+        "contenido contenido contenido sidebar"
+        "contenido contenido contenido sidebar"
+        "footer footer footer footer"
+    ;
+    width: 90%;
+    border: solid green;
+    font-size: 25px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container4>div {
+    font-weight: 900;
+    padding: 20px;
+    color: rgb(243, 234, 234);
+    background-color: rgb(8, 133, 133);
+    border: solid red 1px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container4 .header {
+    background-color: purple;
+    grid-area: header;
+}
+
+.container4 .contenido {
+    background-color: rgb(200, 208, 208);
+    grid-area: contenido;
+}
+
+.container4 .sidebar {
+    background-color: #d55fc0;
+    grid-area: sidebar;
+}
+
+.container4 .footer {
+    background-color: #9c4519;
+    grid-area: footer;
+}
+
+
+.container5 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    /* horizontal aligment 
+    justify-items: center;
+
+    /* vertical aligment 
+    align-items: center;
+    */
+
+    width: 90%;
+    border: solid green;
+    font-size: 25px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container5>div {
+    font-weight: 900;
+    padding: 20px;
+    color: rgb(243, 234, 234);
+    background-color: rgb(8, 133, 133);
+    border: solid red 1px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container5 .item {
+    background-color: purple;
+    width: 75px;
+    height: 75px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    /* horizontal aligment */
+    justify-self: center;
+    /* vertical aligment */
+    align-self: center;
+}
+
+.container6 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 90%;
+    border: solid green;
+    font-size: 25px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container6>div {
+    font-weight: 900;
+    padding: 20px;
+    color: rgb(243, 234, 234);
+    background-color: rgb(8, 133, 133);
+    border: solid red 1px;
     box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
     text-align: center;
 }
