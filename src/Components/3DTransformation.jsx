@@ -5,7 +5,13 @@ export const Transformation3D = () => {
     <>
       <br />
       <centre>
-        <h1>3D Transformation</h1>
+        <div className={styles.mesurements}>
+          <h1>3D Transformation</h1>
+          <h2>3D Transformation</h2>
+          <h3>3D Transformation</h3>
+          <h4>3D Transformation</h4>
+          <p>Texto de prueba</p>
+        </div>
         <div id='envelope' className={styles.envelope}>
           <div className={styles.cube}>
             {/* front */}
