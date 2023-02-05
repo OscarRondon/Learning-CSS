@@ -1,3 +1,11 @@
+h1:hover::before {
+    content: "";
+    border-left: solid white 3px;
+    border-right: solid white 3px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
 .envelope {
     background-color: aliceblue;
     width: 300px;
@@ -11,13 +19,13 @@
     width: 150px;
     height: 150px;
     transform-style: preserve-3d;
-    transform: rotateY(-5deg) rotateX(-10deg) translateZ(200px);
+    transform: rotateY(-5deg) rotateX(-10deg) translateZ(300px);
     transition: 3s ease-in;
     box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.3);
 }
 
 .cube:hover {
-    transform: rotateY(125deg) rotateX(155deg);
+    transform: rotateY(125deg) rotateX(155deg) translateZ(-300px);
 }
 
 .cube div {
